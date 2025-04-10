@@ -1,6 +1,13 @@
+<script setup lang="ts">
+useHead({
+  htmlAttrs: {
+    class: 'scroll-smooth',
+  },
+});
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <Hero />
+  <About />
+  <Projects />
 </template>

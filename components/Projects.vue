@@ -124,12 +124,9 @@ const projects = [
       <h3 class="text-2xl font-bold mb-2">En nog veel meer...</h3>
       <ul>
         <li v-for="(project, index) in projects" :key="index">
-          <NuxtLink
-            :to="project.url"
-            v-text="project.title"
-            target="_blank"
-            class="hover:underline"
-          />
+          <NuxtLink :to="project.url" target="_blank" class="hover:underline">
+            {{ project.title }}
+          </NuxtLink>
         </li>
       </ul>
     </div>

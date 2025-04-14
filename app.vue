@@ -10,4 +10,5 @@ useHead({
   <Hero />
   <About />
   <Projects />
+  <Contact />
 </template>

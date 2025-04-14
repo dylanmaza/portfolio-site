@@ -17,7 +17,7 @@
         ideas to life.
       </p>
       <div class="inline-flex flex-wrap gap-4">
-        <NuxtLink to="#mijn-werk" class="py-3 px-5 bg-black text-white">
+        <NuxtLink to="#projecten" class="py-3 px-5 bg-black text-white">
           Bekijk mijn werk
         </NuxtLink>
         <NuxtLink to="#contact" class="py-3 px-5 border">Contact</NuxtLink>

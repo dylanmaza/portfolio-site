@@ -1,7 +1,7 @@
 <script setup lang="ts">
-const projects = [
+const featuredProjects = [
   {
-    title: 'Werkenbijdefensie',
+    title: 'Werken bij defensie',
     description:
       'Het officiële wervingsplatform van Defensie. De site biedt informatie over militaire en burgerfuncties, opleidingen en carrièremogelijkheden. Met tools zoals een beroepenzoeker helpt het bezoekers bij het vinden van een passende rol binnen Defensie.',
     url: 'https://werkenbijdefensie.nl',
@@ -10,12 +10,12 @@ const projects = [
     tags: ['Laravel', 'Vue 2', 'jQuery', 'GSAP', 'Tailwind'],
   },
   {
-    title: 'WerkenbijhetCAK',
+    title: 'Werken bij Dienst Toeslagen',
     description:
-      'Iedere burger heeft recht heeft op dienstverlening met de menselijke maat. Dat is onze norm. Hiermee bedoelen we dienstverlening op een manier die op dat moment bij de situatie van de burger past. Iedereen kan met het CAK te maken krijgen.',
-    url: 'https://werkenbijhetcak.nl',
+      'Bijna 6 miljoen huishoudens in Nederland krijgen maandelijks een toeslag die voor hen onmisbaar is om de kosten te betalen van de huur, de zorgverzekering, de zorg voor kinderen en de kinderopvang.',
+    url: 'https://werkenbij.diensttoeslagen.nl',
     videoUrl: null,
-    imageUrl: '/werkenbijhetcak-nl-home.png',
+    imageUrl: '/werkenbij-diensttoeslagen-nl-home.png',
     tags: [
       'Headless',
       'Nuxt 3',
@@ -26,22 +26,59 @@ const projects = [
     ],
   },
 ];
+
+const projects = [
+  {
+    title: 'Action jobs',
+    url: 'https://nl.action.jobs',
+  },
+  {
+    title: 'Landal jobs',
+    url: 'https://jobs.landal.com',
+  },
+  {
+    title: 'Werken bij het CAK',
+    url: 'https://werkenbijhetcak.nl',
+  },
+  {
+    title: 'Maak werk van een schonere wereld',
+    url: 'https://www.maakwerkvaneenschonerewereld.nl',
+  },
+  {
+    title: 'Veva',
+    url: 'https://veva.nl',
+  },
+  {
+    title: 'Werken bij De Belastingdienst',
+    url: 'https://werken.belastingdienst.nl',
+  },
+  {
+    title: 'Werken bij DNB',
+    url: 'https://www.werkenbijdnb.nl',
+  },
+  {
+    title: 'Werken bij het Loodswezen',
+    url: 'https://werkenbijhetloodswezen.nl/',
+  },
+];
 </script>
 
 <template>
-  <div id="mijn-werk" class="my-25 text-center">
+  <div id="projecten" class="my-25 text-center">
     <div class="px-4 mb-5">
-      <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mx-auto">
         <h2 class="font-bold text-4xl mb-5">Projecten</h2>
         <p>Explore my diverse range of frontend development projects.</p>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-auto mb-10">
       <div class="grid gap-20 text-left">
-        <div v-for="(project, index) in projects" :key="index">
+        <div v-for="(project, index) in featuredProjects" :key="index">
           <video
             v-if="project.videoUrl"
             :src="project.videoUrl"
+            width="1280"
+            height="654"
             controls
           ></video>
           <img
@@ -82,6 +119,19 @@ const projects = [
           </div>
         </div>
       </div>
+    </div>
+    <div class="max-w-2xl mx-auto">
+      <h3 class="text-2xl font-bold mb-2">En nog veel meer...</h3>
+      <ul>
+        <li v-for="(project, index) in projects" :key="index">
+          <NuxtLink
+            :to="project.url"
+            v-text="project.title"
+            target="_blank"
+            class="hover:underline"
+          />
+        </li>
+      </ul>
     </div>
   </div>
 </template>

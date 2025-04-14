@@ -8,7 +8,8 @@ useHead({
 
 <template>
   <Hero />
-  <About />
+  <!-- <About /> -->
+  <FeaturedProjects />
   <Projects />
   <Contact />
 </template>

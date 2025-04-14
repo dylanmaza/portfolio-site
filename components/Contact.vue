@@ -20,9 +20,9 @@ const socials = [
 </script>
 
 <template>
-  <div id="contact" class="text-center px-4 my-25">
+  <div id="contact" class="bg-gray-100 text-center px-4 py-25">
     <div class="max-w-2xl mx-auto">
-      <h2 class="font-bold text-4xl mb-5">Contact</h2>
+      <h2 class="font-extrabold text-4xl mb-10">Contact</h2>
       <ul class="inline-flex flex-wrap gap-3">
         <li v-for="(social, index) in socials" :key="index">
           <NuxtLink :to="social.url" :title="social.text" target="_blank">

@@ -13,9 +13,12 @@
         Developer
       </h1>
       <p class="mb-6">
-        I'm a passionate frontend developer dedicated to creating beautiful and
-        functional web experiences. Explore my work and see how I can bring your
-        ideas to life.
+        Enthousiaste frontend developer met ruim 8 jaar ervaring in het
+        ontwikkelen van gebruiksvriendelijke en responsieve webapplicaties.
+        Sterk in HTML, CSS en JavaScript, met ervaring in moderne frameworks
+        zoals Vue.js. Gepassioneerd over het creëren van optimale
+        gebruikerservaringen en het implementeren van best practices in
+        webontwikkeling.
       </p>
       <div class="inline-flex flex-wrap gap-4">
         <NuxtLink to="#projecten">

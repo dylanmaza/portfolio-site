@@ -5,7 +5,7 @@ const featuredProjects = [
     description:
       'Het officiële wervingsplatform van Defensie. De site biedt informatie over militaire en burgerfuncties, opleidingen en carrièremogelijkheden. Met tools zoals een beroepenzoeker helpt het bezoekers bij het vinden van een passende rol binnen Defensie.',
     url: 'https://werkenbijdefensie.nl',
-    videoUrl: '/werkenbijdefensie-nl-home-praktische-info.mp4',
+    videoUrl: '/werkenbijdefensie-nl-home-praktische-info.mp4#t=0.001',
     imageUrl: null,
     tags: ['Laravel', 'Vue 2', 'jQuery', 'GSAP', 'Tailwind'],
   },
@@ -75,7 +75,7 @@ const featuredProjects = [
                   v-for="(tag, index) in project.tags"
                   :key="index"
                   v-text="tag"
-                  class="py-1 px-2 bg-black text-white rounded"
+                  class="py-1 px-2 border-2 rounded font-bold"
                 />
               </ul>
             </div>
